@@ -1,12 +1,6 @@
 import { forwardRef, useEffect, useRef } from "react"
-<<<<<<< HEAD
-import sign from '../assets/images/signature.png'
-// import aboutshape2 from '../assets/images/about-shape-2.svg'
-import aboutshape3 from '../assets/images/about-shape-3.svg'
-=======
 // import sign from '@/assets/images/signature.png'
 // import aboutshape3 from '@/assets/images/about-shape-3.svg'
->>>>>>> a885a359905d40dfeb7046a96a7c89bf0b7eaa58
 
 const About = forwardRef((prop, ref) => {
 

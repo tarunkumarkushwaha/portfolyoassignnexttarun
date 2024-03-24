@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-import loading from '../assets/images/loading.svg'
-import loadingcircle from '../assets/images/loading-circle.svg'
-=======
 "use client"
 import Image from 'next/image'
 // import loading from '../assets/images/loading.svg'
 // import loadingcircle from '../assets/images/loading-circle.svg'
->>>>>>> a885a359905d40dfeb7046a96a7c89bf0b7eaa58
 const NoData = () => {
     return (
         <>
