@@ -1,6 +1,8 @@
 "use client"
 import { forwardRef, useEffect, useRef, useState } from "react"
-import heroimage from '../assets/images/hero-shape.svg'
+// import heroimage from '../assets/images/hero-shape.svg'
+import heroimage from '../public/assets/images/hero-shape.svg'
+import Image from "next/image"
 
 const Mainpage = forwardRef((prop, ref) => {
     const [activeLetterBoxIndex, setactiveLetterBoxIndex] = useState(0)
@@ -120,8 +122,14 @@ const Mainpage = forwardRef((prop, ref) => {
 
                 </div>
 
-                <img src={heroimage} width="211" height="189" alt="" className="shape" />
-
+                {/* <img src={'public/vercel.svg'} width="211" height="189" alt="" className="shape" /> */}
+                <Image
+                    src="/next.svg"
+                    alt="Next.js Logo"
+                    width={180}
+                    height={37}
+                    priority
+                />
             </section>
         </>
     )
