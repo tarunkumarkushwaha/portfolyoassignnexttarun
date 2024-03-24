@@ -1,4 +1,3 @@
-"use client"
 import { forwardRef, useEffect, useRef, useState } from "react"
 import heroimage from '../assets/images/hero-shape.svg'
 

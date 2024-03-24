@@ -1,4 +1,3 @@
-"use client"
 import React, { forwardRef, useEffect, useRef } from 'react'
 import arrow from '../assets/images/arrow-forward.svg'
 import footshape from '../assets/images/footer-shape.svg'

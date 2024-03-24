@@ -1,4 +1,3 @@
-"use client"
 import { forwardRef, useEffect, useRef } from "react"
 
 const Skills = forwardRef((prop, ref) => {
@@ -37,7 +36,7 @@ const Skills = forwardRef((prop, ref) => {
         <div className="flex-col h3">
           <h1 className="sub-title" ref={revealElement1}>Skills</h1>
         </div>
-        <div className="container">
+        <div className="container md:pl-1 pl-20">
 
           <div className="about-content">
 

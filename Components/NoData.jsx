@@ -1,4 +1,3 @@
-"use client"
 import loading from '../assets/images/loading.svg'
 import loadingcircle from '../assets/images/loading-circle.svg'
 const NoData = () => {

@@ -1,4 +1,3 @@
-"use client"
 import { useCallback, useEffect, useRef, useState } from 'react'
 import menu from '../assets/images/menu.svg'
 import user from '../assets/images/user.svg'

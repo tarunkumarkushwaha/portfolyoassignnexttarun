@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';

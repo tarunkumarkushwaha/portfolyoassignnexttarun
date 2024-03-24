@@ -28,7 +28,7 @@ export default function Home() {
   const testimonials = useRef();
 
   useEffect(() => {
-    let API_KEY = `${import.meta.env.VITE_API_KEY}`
+    let API_KEY = "65b3a22c01d900e96c4219ae"
     fetch(`https://portfolio-backend-30mp.onrender.com/api/v1/get/user/${API_KEY}`)
       .then((res) => res.json())
       .then((data) => {

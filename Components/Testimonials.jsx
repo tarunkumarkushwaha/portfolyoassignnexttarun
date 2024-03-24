@@ -1,7 +1,4 @@
-
-"use client"
 import React, { forwardRef, useRef } from 'react'
-// import arrow from '../assets/images/arrow-forward.svg'
 
 const Testimonials = forwardRef((prop, ref) => {
   let experiencedata = prop.data.user.timeline
@@ -10,17 +7,19 @@ const Testimonials = forwardRef((prop, ref) => {
 
   return (
     <>
-      <section ref={ref} >
+      <section ref={ref} className='md:ml-1 ml-40'>
         <div className="flex-col h3">
           <h1 className="sub-title">Testimonials</h1>
         </div>
-        <div className="testimonial-card ml-0">{testimonialData.map((item, index) => (
+        <div className="testimonial-card ml-0 bg-gray-800">{testimonialData.map((item, index) => (
 
-          <div key={index} className="test-box p-8">
-            <div className='flex justify-center'><img src={item.image.url} alt={item.image.url} /></div>
+          <div key={index} className="test-box p-8 min-w-[300px] min-h-[400px]">
+            <div className='flex justify-center'>
+              <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={item.image.url} alt={item.image.url} />
+            </div>
             <div className="blog-text">
-              <h3 className='flex text-3xl p-2 font-bold justify-center mt-5 mb-2'>{item.name}</h3>
-              <p className='flex justify-center text-center'>{item.review}</p>
+              <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">{item.name}</h5>
+              <p className='flex justify-center text-gray-400 text-center'>{item.review}</p>
             </div>
           </div>
         ))}</div>
