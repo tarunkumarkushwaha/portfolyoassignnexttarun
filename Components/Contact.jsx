@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect, useRef } from 'react'
-import arrow from '../assets/images/arrow-forward.svg'
-import footshape from '../assets/images/footer-shape.svg'
+// import arrow from '../assets/images/arrow-forward.svg'
+// import footshape from '../assets/images/footer-shape.svg'
 
 const Contact = forwardRef((prop, ref) => {
 
@@ -43,7 +43,7 @@ const Contact = forwardRef((prop, ref) => {
                         </h2>
 
                         <a href="#" className="btn-icon" ref={revealElement3} data-reveal>
-                            <img src={arrow} width="43" height="20" loading="lazy" alt="arrow-forward icon" />
+                            {/* <img src={arrow} width="43" height="20" loading="lazy" alt="arrow-forward icon" /> */}
                         </a>
 
                         <div className="flex-col m-5">
@@ -59,7 +59,7 @@ const Contact = forwardRef((prop, ref) => {
                             </p>
                         </div>
 
-                        <img src={footshape} width="185" height="134" loading="lazy" alt="" className="shape" />
+                        {/* <img src={footshape} width="185" height="134" loading="lazy" alt="" className="shape" /> */}
 
                     </div>
                 </div>

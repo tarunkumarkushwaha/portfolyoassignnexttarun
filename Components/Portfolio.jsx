@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import arrow from '../assets/images/arrow-forward.svg'
+// import arrow from '../assets/images/arrow-forward.svg'
 
 const Portfolio = forwardRef((prop, ref) => {
   let myData = prop.data.user.projects;
@@ -20,8 +20,8 @@ const Portfolio = forwardRef((prop, ref) => {
       </div>
 
       <a href="#" className="btn-icon">
-        <img src={arrow} width="43" height="20" loading="lazy"
-          alt="arrow-forward icon" />
+        {/* <img src={arrow} width="43" height="20" loading="lazy"
+          alt="arrow-forward icon" /> */}
       </a>
 
     </div>

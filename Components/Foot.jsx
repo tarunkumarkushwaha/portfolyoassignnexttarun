@@ -1,8 +1,8 @@
 import React from 'react'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import footbg from '../assets/images/footer-bg.jpg'
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import XIcon from '@mui/icons-material/X';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import footbg from '@/assets/images/footer-bg.jpg'
 
 const Foot = ({data}) => {
 
@@ -20,16 +20,21 @@ const Foot = ({data}) => {
 
               <li>
                 <a href="#" className="social-link">
-                  <FacebookIcon />
+                  {/* <FacebookIcon /> */}
                 </a>
               </li>
 
               <li>
-                <a href="#" className="social-link"><InstagramIcon /></a>
+                <a href="#" className="social-link">
+                  {/* <InstagramIcon /> */}
+                  </a>
               </li>
 
               <li>
-                <a href="#" className="social-link"><XIcon /></a>
+                <a href="#" className="social-link">
+                  {/* <XIcon /> */}
+                
+                  </a>
               </li>
 
             </ul>
@@ -40,8 +45,8 @@ const Foot = ({data}) => {
         </div>
 
         <div className="footer-bg has-before">
-          <img src={footbg} width="1920" height="1135" loading="lazy" alt="photography"
-            className="img-cover" />
+          {/* <img src={footbg} width="1920" height="1135" loading="lazy" alt="photography" */}
+            {/* className="img-cover" /> */}
         </div>
 
       </footer>

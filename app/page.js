@@ -1,20 +1,20 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
-import './App.css'
-import Navbar from './Components/Navbar'
-import Skills from './Components/Skills'
-import Mainpage from './Components/Mainpage'
-import About from './Components/About'
-import Service from './Components/Service'
-import Portfolio from './Components/Portfolio'
-import Foot from './Components/Foot'
-import NoData from './Components/NoData'
-import scrooldn from './assets/images/scroll-down.svg'
-import shape from './assets/images/gallery-shape.svg'
-import Testimonials from './Components/Testimonials'
-import Scroll from './Components/Scroll'
-import Cursor from './Components/Cursor'
-import Contact from './Components/Contact'
+import Skills from '@/Components/Skills'
+import Mainpage from '@/Components/Mainpage'
+import About from '@/Components/About'
+import Service from '@/Components/Service'
+import Portfolio from '@/Components/Portfolio'
+import Foot from '@/Components/Foot'
+import NoData from '@/Components/NoData'
+// import scrooldn from '@/assets/images/scroll-down.svg'
+import Image from 'next/image'
+// import shape from '@/assets/images/gallery-shape.svg'
+import Testimonials from '@/Components/Testimonials'
+import Scroll from '@/Components/Scroll'
+import Cursor from '@/Components/Cursor'
+import Contact from '@/Components/Contact'
+import Navbar from '@/Components/Navbar'
 
 export default function Home() {
   const [data, setData] = useState();
@@ -42,30 +42,36 @@ export default function Home() {
   }, [data]);
   return (
     <>
-    {data ?
-      <>
-        <Navbar data={data} testimonials={testimonials} services={services} skills={skills} home={home} about={about} contacts={contacts} portfolio={portfolio} />
-        <main>
-          <article>
-            <Mainpage data={data} ref={home} />
-            <About data={data} ref={about} />
-            <Service data={data} ref={services} />
-            <Portfolio data={data} ref={portfolio} />
-            <Skills data={data} ref={skills} />
-            <Testimonials data={data} ref={testimonials} />
-            <div onClick={() => home.current.scrollIntoView()} className="flex justify-center p-3 scroll-down">
-              <img src={scrooldn} width="40" height="66" loading="lazy" alt="mouse scroll" />
-            </div>
-            <img src={shape} width="220" height="78" loading="lazy" alt="" className="shape" />
+      {data ?
+        <>
+          <Navbar data={data} testimonials={testimonials} services={services} skills={skills} home={home} about={about} contacts={contacts} portfolio={portfolio} />
+          <main>
+            <article>
+              <Mainpage data={data} ref={home} />
+              <About data={data} ref={about} />
+              <Service data={data} ref={services} />
+              <Portfolio data={data} ref={portfolio} />
+              <Skills data={data} ref={skills} />
+              <Testimonials data={data} ref={testimonials} />
+              <div onClick={() => home.current.scrollIntoView()} className="flex justify-center p-3 scroll-down">
+                {/* <img src={scrooldn} width="40" height="66" loading="lazy" alt="mouse scroll" /> */}
+                <Image
+                  src="/public/assets/images/scroll-down.svg"
+                  width={40}
+                  height={66}
+                  alt="go to top"
+                />
+              </div>
+              {/* <img src={shape} width="220" height="78" loading="lazy" alt="" className="shape" /> */}
 
-          </article>
-        </main>
-        <Contact data={data} ref={contacts}/>
-        <Foot data={data} />
-        <Scroll/>
-        <Cursor/>
-      </> : <NoData />
-    }
-  </>
+            </article>
+          </main>
+          {/* <Contact data={data} ref={contacts} />
+          <Foot data={data} />
+          <Scroll /> */}
+          <Cursor />
+        </> : <NoData />
+      }
+    </>
   );
 }

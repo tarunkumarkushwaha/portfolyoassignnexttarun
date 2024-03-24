@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import menu from '../assets/images/menu.svg'
-import user from '../assets/images/user.svg'
-import { NavLink } from 'react-router-dom'
+// import menu from '../assets/images/menu.svg'
+// import user from '../assets/images/user.svg'
 
 const Navbar = ({ data, skills, home, about, services, contacts, portfolio, testimonials }) => {
     const [menuOpen, setmenuOpen] = useState(false)
@@ -34,20 +33,20 @@ const Navbar = ({ data, skills, home, about, services, contacts, portfolio, test
             <header className="header" data-header>
                 <div className="container">
 
-                    <NavLink to="/" className="logo">
+                    <a to="/" className="logo">
                         <p className="imglogo">{data.user.about.name.trim()[0]}</p>
-                    </NavLink>
+                    </a>
 
                     <button className={`nav-open-btn`} aria-label="open menu" onClick={toggleNav} data-nav-toggler>
-                        <img src={menu} width="17" height="17" alt="menu icon" />
+                        <img src={"/assets/images/menu.svg"} width="17" height="17" alt="menu icon" />
                     </button>
 
                     <nav ref={menuRef} className={`navbar ${menuOpen && "active"}`} data-navbar>
 
                         <div className="navbar-top">
-                            <NavLink to="/" className="logo">
+                            <a to="/" className="logo">
                                 <p className="imglogo">{data.user.about.name.trim()[0]}</p>
-                            </NavLink>
+                            </a>
 
                             <button className="nav-close-btn" aria-label="close menu" onClick={toggleNav} data-nav-toggler>
                                 <span className="span one"></span>
@@ -87,7 +86,7 @@ const Navbar = ({ data, skills, home, about, services, contacts, portfolio, test
                         </ul>
 
                         <button className="login-btn">
-                            <img src={user} width="21" height="21" alt="user icon" />
+                            {/* <img src={user} width="21" height="21" alt="user icon" /> */}
 
                             <span className="span">Login</span>
                         </button>
