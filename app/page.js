@@ -56,19 +56,21 @@ export default function Home() {
               <div onClick={() => home.current.scrollIntoView()} className="flex justify-center p-3 scroll-down">
                 {/* <img src={scrooldn} width="40" height="66" loading="lazy" alt="mouse scroll" /> */}
                 <Image
-                  src="/public/assets/images/scroll-down.svg"
+                  src="/assets/images/scroll-down.svg"
                   width={40}
                   height={66}
                   alt="go to top"
+                  className='cursor-pointer'
+                  title='go to top'
                 />
               </div>
-              {/* <img src={shape} width="220" height="78" loading="lazy" alt="" className="shape" /> */}
+              <img src={"/assets/images/gallery-shape.svg"} width="220" height="78" loading="lazy" alt="" className="shape" />
 
             </article>
           </main>
-          {/* <Contact data={data} ref={contacts} />
+          <Contact data={data} ref={contacts} />
           <Foot data={data} />
-          <Scroll /> */}
+          <Scroll />
           <Cursor />
         </> : <NoData />
       }
