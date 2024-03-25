@@ -1,3 +1,4 @@
+"use client"
 import React, { forwardRef } from 'react'
 // import arrow from '../assets/images/arrow-forward.svg'
 
@@ -20,8 +21,8 @@ const Portfolio = forwardRef((prop, ref) => {
       </div>
 
       <a href="#" className="btn-icon">
-        {/* <img src={arrow} width="43" height="20" loading="lazy"
-          alt="arrow-forward icon" /> */}
+        <img src={"/assets/images/arrow-forward.svg"} width="43" height="20" loading="lazy"
+          alt="arrow-forward icon" />
       </a>
 
     </div>
@@ -32,7 +33,7 @@ const Portfolio = forwardRef((prop, ref) => {
 
         <div className="container pl-48">
           <div className="flex-col h3">
-            <h1 className="sub-title">Projects</h1>
+            <h1 className="sub-title flex justify-center">Projects</h1>
           </div>
           <ul className="gallery-list flex flex-wrap justify-center">
             <li className="gallery-item">

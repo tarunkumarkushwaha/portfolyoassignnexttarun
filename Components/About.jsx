@@ -1,3 +1,4 @@
+"use client"
 import { forwardRef, useEffect, useRef } from "react"
 // import sign from '@/assets/images/signature.png'
 // import aboutshape3 from '@/assets/images/about-shape-3.svg'
@@ -52,8 +53,8 @@ const About = forwardRef((prop, ref) => {
                                 I’m ready to give you my best. */}
                             </p>
 
-                            {/* <img src={sign} width="151" height="92" loading="lazy" alt="signature"
-                                className="img" /> */}
+                            <img src={"/assets/images/signature.png"} width="151" height="92" loading="lazy" alt="signature"
+                                className="img" />
 
                         </div>
 
@@ -72,8 +73,8 @@ const About = forwardRef((prop, ref) => {
 
                     </figure>
 
-                    {/* <img src={aboutshape3} width="239" height="232" loading="lazy" alt=""
-                        className="shape shape-3" /> */}
+                    <img src={"/assets/images/about-shape-3.svg"} width="239" height="232" loading="lazy" alt=""
+                        className="shape shape-3" />
 
                 </div>
             </section>

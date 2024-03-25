@@ -1,3 +1,4 @@
+"use client"
 import React, { forwardRef, useEffect, useRef } from 'react'
 // import arrow from '../assets/images/arrow-forward.svg'
 // import footshape from '../assets/images/footer-shape.svg'
@@ -31,10 +32,10 @@ const Contact = forwardRef((prop, ref) => {
 
     return (
         <>
-            <div ref={ref} className="footer">
+            <div ref={ref} className="footer max-sm:pl[20%]">
 
                 <div className="footer-top section" id="contact">
-                    <div className="container">
+                    <div className="container md:ml-52 ml-28">
 
                         <p className="section-subtitle" ref={revealElement1} data-reveal>Contact Us</p>
 
@@ -43,7 +44,7 @@ const Contact = forwardRef((prop, ref) => {
                         </h2>
 
                         <a href="#" className="btn-icon" ref={revealElement3} data-reveal>
-                            {/* <img src={arrow} width="43" height="20" loading="lazy" alt="arrow-forward icon" /> */}
+                            <img src={"/assets/images/arrow-forward.svg"} width="43" height="20" loading="lazy" alt="arrow-forward icon" />
                         </a>
 
                         <div className="flex-col m-5">
@@ -59,7 +60,7 @@ const Contact = forwardRef((prop, ref) => {
                             </p>
                         </div>
 
-                        {/* <img src={footshape} width="185" height="134" loading="lazy" alt="" className="shape" /> */}
+                        <img src={"/assets/images/footer-shape.svg"} width="185" height="134" loading="lazy" alt="" className="shape" />
 
                     </div>
                 </div>

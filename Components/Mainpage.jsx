@@ -1,6 +1,5 @@
+"use client"
 import { forwardRef, useEffect, useRef, useState } from "react"
-// import heroimage from '../assets/images/hero-shape.svg'
-import heroimage from '../public/assets/images/hero-shape.svg'
 import Image from "next/image"
 
 const Mainpage = forwardRef((prop, ref) => {
@@ -100,7 +99,7 @@ const Mainpage = forwardRef((prop, ref) => {
     return (
         <>
             <section ref={ref} className="section hero" id="home" aria-label="home">
-                <div className="container">
+                <div className="container sm:ml-0 ml-28">
 
                     <img src={prop.data.user.about.avatar.url} width="322" height="322" alt="" className="hero-banner" />
 
@@ -121,14 +120,8 @@ const Mainpage = forwardRef((prop, ref) => {
 
                 </div>
 
-                {/* <img src={'public/vercel.svg'} width="211" height="189" alt="" className="shape" /> */}
-                <Image
-                    src="/next.svg"
-                    alt="Next.js Logo"
-                    width={180}
-                    height={37}
-                    priority
-                />
+                <img src={"/assets/images/hero-shape.svg"} width="211" height="189" alt="" className="shape" />
+
             </section>
         </>
     )

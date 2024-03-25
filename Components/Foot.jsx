@@ -1,16 +1,15 @@
+"use client"
+import { Facebook, Instagram, Twitter } from '@mui/icons-material'
 import React from 'react'
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import XIcon from '@mui/icons-material/X';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import footbg from '@/assets/images/footer-bg.jpg'
+
 
 const Foot = ({data}) => {
 
   return (
     <>
-      <footer className="footer">
+     <footer className="footer max-sm:pl[20%]">
         <div className="footer-bottom">
-          <div className="container">
+          <div className="container ml-28">
 
             <a href="#" className="logo">
               <p className="imglogo">{data.user.about.name.trim()[0]}</p>
@@ -20,21 +19,16 @@ const Foot = ({data}) => {
 
               <li>
                 <a href="#" className="social-link">
-                  {/* <FacebookIcon /> */}
+                  <Facebook />
                 </a>
               </li>
 
               <li>
-                <a href="#" className="social-link">
-                  {/* <InstagramIcon /> */}
-                  </a>
+                <a href="#" className="social-link"><Instagram /></a>
               </li>
 
               <li>
-                <a href="#" className="social-link">
-                  {/* <XIcon /> */}
-                
-                  </a>
+                <a href="#" className="social-link"><Twitter /></a>
               </li>
 
             </ul>
@@ -42,11 +36,6 @@ const Foot = ({data}) => {
             <p className="copyright">Made with love</p>
 
           </div>
-        </div>
-
-        <div className="footer-bg has-before">
-          {/* <img src={footbg} width="1920" height="1135" loading="lazy" alt="photography" */}
-            {/* className="img-cover" /> */}
         </div>
 
       </footer>
